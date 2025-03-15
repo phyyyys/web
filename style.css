@@ -52,3 +52,35 @@ body {
   width: 1.5em;
   color: black;
 }
+
+.fa-instagram {
+  width: 1.5em;
+  color: black;
+}
+
+.navright > a {
+  text-decoration: none;
+  color: black;
+}
+
+.imagecont {
+  width: 100vw;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-top: 2em;
+}
+
+.foot {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
