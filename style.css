@@ -110,6 +110,7 @@ body {
     width: 55vw;
     margin-left: 10vw;
     justify-content: left;
+    margin-top: 0;
   }
 
   .navright {
