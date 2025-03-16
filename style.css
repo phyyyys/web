@@ -97,8 +97,9 @@ body {
 
 .works {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: contain;
+  display: block;
 }
 
 .foot {
@@ -131,8 +132,28 @@ body {
   align-items: center;
 }
 
-.gallerycont {
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   margin: 3em;
+  gap: 2em;
+}
+
+.gallerycont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 1200px) and (min-height: 500px){
@@ -175,15 +196,52 @@ body {
   }
 }
 
-@media screen and (min-width: 1000px) {
-  .gallery {
-    display: flex;
-    flex-direction: column;
+@media screen and (min-width: 700px) {
+  .one, .two, .three, .four, .five {
+    width: 15vw;
   }
 
-  .firstrow {
-    display: flex;
-    flex-direction: row;
+  .six {
+    width: 32vw;
+  }
+
+  .seven {
+    width: 24vw;
+  }
+
+  .eight {
+    width: 20vw;
+  }
+
+  .nine, .ten, .twelve, .thirteen, .fourteen, .fifteen, .sixteen {
+    width: 10vw;
+  }
+
+  .eleven, .seventeen, .eighteen {
+    width: 14vw;
+  }
+
+  .nineteen, .twenty, .twentyone {
+    width: 12vw;
+  }
+
+  .twentytwo, .twentythree {
+    width: 16vw;
+  }
+
+  .twentyfour, .twentyfive {
+    width: 14vw;
+  }
+
+  .twentysix, .twentyseven, .twentyeight, .twentynine, .thirtyone {
+    width: 12vw;
+  }
+  .thirty {
+    width: 14vw;
+  }
+
+  .thirtytwo {
+    width: 16vw;
   }
 }
 
