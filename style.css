@@ -81,6 +81,12 @@ body {
   margin-top: 2em;
 }
 
+.works {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .foot {
   display: flex;
   justify-content: space-around;
@@ -98,6 +104,10 @@ body {
 .footright {
   display: flex;
   align-items: center;
+}
+
+.gallerycont {
+  margin: 1.5em;
 }
 
 @media screen and (min-width: 1200px){
