@@ -23,6 +23,15 @@ body {
   height: 20vh;
 }
 
+.worknav{
+  margin-bottom: 3em;
+}
+
+.navleft > a {
+  text-decoration: none;
+  color: black;
+}
+
 .navright {
   display: flex;
   justify-content: center;
@@ -48,6 +57,11 @@ body {
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
+}
+
+.fa:hover {
+  transition: ease-in-out;
+  opacity: 70%;
 }
 
 .fa-facebook {
@@ -95,10 +109,21 @@ body {
   height: 15vh;
 }
 
+.footleft > div > a {
+  text-decoration: none;
+  color: black;
+}
+
+.footleft > div > a:hover {
+  transition: ease-in-out;
+  opacity: 70%;
+}
+
 .footleft {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 1em;
 }
 
 .footright {
@@ -107,10 +132,10 @@ body {
 }
 
 .gallerycont {
-  margin: 1.5em;
+  margin: 3em;
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) and (min-height: 500px){
   .nav {
     flex-direction: row;
   }
@@ -147,5 +172,50 @@ body {
 
   .navright {
     font-size: 5.5vw;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .gallery {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .firstrow {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  body {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav {
+    flex-direction: row;
+    margin-top: 1em;
+    width: 100vw;
+    font-size: 0.75em;
+  }
+
+  .imagecont {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-height: 350px) and (max-width: 650px) {
+  .foot {
+    font-size: 1em;
+  }
+
+  .navleft {
+    font-size: 2em;
+  }
+
+  .navright {
+    font-size: 1.5em;
   }
 }
