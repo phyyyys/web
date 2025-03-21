@@ -156,6 +156,21 @@ body {
   justify-content: space-between;
 }
 
+.overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  opacity: 0;
+  font-size: 2em;
+  /*color: #D4D0CD;*/
+  color: #F6F5F0;
+  text-align: center;
+}
+
 @media screen and (min-width: 1200px) and (min-height: 500px){
   .nav {
     flex-direction: row;
@@ -196,52 +211,67 @@ body {
   }
 }
 
-@media screen and (min-width: 700px) {
-  .one, .two, .three, .four, .five {
-    width: 15vw;
+@media screen and (min-width: 850px) {
+
+  .text {
+    font-size: 1.8vw;
   }
 
-  .six {
-    width: 32vw;
+  .small {
+    font-size: 1.25vw;
   }
 
-  .seven {
-    width: 24vw;
+  .gallery > div {
+    gap: 1vw;
   }
 
-  .eight {
-    width: 20vw;
+  .works {
+    height: 100%;
+    width: auto;
   }
 
-  .nine, .ten, .twelve, .thirteen, .fourteen, .fifteen, .sixteen {
-    width: 10vw;
+  .firstrow {
+    /*height: 32vh;*/
+    height: 18vw;
   }
 
-  .eleven, .seventeen, .eighteen {
-    width: 14vw;
+  .secondrow {
+    /* height: 32vh; */
+    height: 18vw;
   }
 
-  .nineteen, .twenty, .twentyone {
-    width: 12vw;
+  .thirdrow {
+    /* height: 26vh; */
+    height: 12vw;
   }
 
-  .twentytwo, .twentythree {
-    width: 16vw;
+  .fourthrow {
+    /* height: 38vh; */
+    height: 22vw;
   }
 
-  .twentyfour, .twentyfive {
-    width: 14vw;
+  .fifthrow {
+    /* height: 32vh; */
+    height: 16vw;
   }
 
-  .twentysix, .twentyseven, .twentyeight, .twentynine, .thirtyone {
-    width: 12vw;
-  }
-  .thirty {
-    width: 14vw;
+  .sixthrow {
+    /* height: 40vh; */
+    height: 26vw;
   }
 
-  .thirtytwo {
-    width: 16vw;
+  .seventhrow {
+    /* height: 36vh; */
+    height: 18vw;
+  }
+
+  .eighthrow {
+    /* height: 40vh; */
+    height: 26vw;
+  }
+
+  .gallerycont {
+    height: 100%;
   }
 }
 
@@ -262,6 +292,15 @@ body {
   .imagecont {
     width: 50vw;
   }
+
+  .gallery {
+    margin: 2em;
+    gap: 2em;
+  }
+
+  .gallery > div {
+    gap: 2em;
+  }
 }
 
 @media screen and (max-height: 350px) and (max-width: 650px) {
@@ -276,4 +315,30 @@ body {
   .navright {
     font-size: 1.5em;
   }
+}
+
+@media screen and (min-width: 550px) and (max-width: 850px) {
+  .gallery {
+    margin: 34vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+
+  .gallerycont > div {
+    gap: 2em;
+  }
+}
+
+@media screen and (min-width: 850px) {
+
+  .gallerycont:hover .text {
+    transition: .2s ease-in;
+    opacity: 1;
+  }
+  
+  .gallerycont:hover .works {
+    filter: brightness(40%);
+    transition: .2s ease-in;
+  }
+
 }
