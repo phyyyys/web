@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WORK</title>
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="popup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -18,33 +19,42 @@
         </div>
     </div>
 
+    <div class="popup" id="imagePopup">
+        <div class="popupContainer">
+            <p></p>
+            <button class="close-btn" onclick="closePopup()">&times;</button>
+            <img src="#" id="fullImage">
+            <p id="description"></p>
+        </div>
+    </div>
+
     <div class="gallery">
         <div class="firstrow">
-            <div class="gallerycont one">
+            <div class="gallerycont one hover thumbnail" onclick="openPopup(1)">
                 <img src="1.jpg" alt="Image1" class="works"/>
                 <div class="overlay">
                     <div class="text">CHLORIS</div>
                 </div>
             </div>
-            <div class="gallerycont two">
+            <div class="gallerycont two hover thumbnail" onclick="openPopup(2)">
                 <img src="2.jpg" alt="Image2" class="works"/>
                 <div class="overlay">
                     <div class="text">THE BIRTH<br> OF<br> VENUS</div>
                 </div>
             </div>
-            <div class="gallerycont three">
+            <div class="gallerycont three hover thumbnail" onclick="openPopup(3)">
                 <img src="3.jpg" alt="Image3" class="works"/>
                 <div class="overlay">
                     <div class="text">CHANTICO</div>
                 </div>
             </div>
-            <div class="gallerycont four">
+            <div class="gallerycont four hover thumbnail" onclick="openPopup(4)">
                 <img src="4.jpg" alt="Image4" class="works"/>
                 <div class="overlay">
                     <div class="text">HECATE</div>
                 </div>
             </div>
-            <div class="gallerycont five">
+            <div class="gallerycont five hover thumbnail" onclick="openPopup(5)">
                 <img src="5.jpg" alt="Image5" class="works"/>
                 <div class="overlay">
                     <div class="text">ALAKSHMI</div>
@@ -52,19 +62,19 @@
             </div>
         </div>
         <div class="secondrow">
-            <div class="gallerycont eight">
+            <div class="gallerycont eight hover thumbnail" onclick="openPopup(8)">
                 <img src="8.jpg" alt="Image8" class="works"/>
                 <div class="overlay">
                     <div class="text">THE DANCE<br> OF<br> THE MUSES</div>
                 </div>
             </div>
-            <div class="gallerycont six">
+            <div class="gallerycont six hover thumbnail" onclick="openPopup(6)">
                 <img src="6.jpg" alt="Image6" class="works"/>
                 <div class="overlay">
                     <div class="text">TITANOMACHY</div>
                 </div>
             </div>
-            <div class="gallerycont seven">
+            <div class="gallerycont seven hover thumbnail" onclick="openPopup(7)">
                 <img src="7.jpg" alt="Image7" class="works"/>
                 <div class="overlay">
                     <div class="text">LEDA</div>
@@ -72,43 +82,43 @@
             </div>
         </div>
         <div class="thirdrow">
-            <div class="gallerycont nine">
+            <div class="gallerycont nine hover thumbnail" onclick="openPopup(9)">
                 <img src="9.jpg" alt="Image9" class="works"/>
                 <div class="overlay">
                     <div class="text">MOIRAI</div>
                 </div>
             </div>
-            <div class="gallerycont ten">
+            <div class="gallerycont ten hover thumbnail" onclick="openPopup(10)">
                 <img src="10.jpg" alt="Image10" class="works"/>
                 <div class="overlay">
                     <div class="text">FREYJA</div>
                 </div>
             </div>
-            <div class="gallerycont twelve">
+            <div class="gallerycont twelve hover thumbnail" onclick="openPopup(12)">
                 <img src="12.jpg" alt="Image12" class="works"/>
                 <div class="overlay">
                     <div class="text">PANACEA</div>
                 </div>
             </div>
-            <div class="gallerycont thirteen">
+            <div class="gallerycont thirteen hover thumbnail" onclick="openPopup(13)">
                 <img src="13.jpg" alt="Image13" class="works"/>
                 <div class="overlay">
                     <div class="text">AMBIKA</div>
                 </div>
             </div>
-            <div class="gallerycont fourteen">
+            <div class="gallerycont fourteen hover thumbnail" onclick="openPopup(14)">
                 <img src="14.jpg" alt="Image14" class="works"/>
                 <div class="overlay">
                     <div class="text small">XIWANGMU</div>
                 </div>
             </div>
-            <div class="gallerycont fifteen">
+            <div class="gallerycont fifteen hover thumbnail" onclick="openPopup(15)">
                 <img src="15.jpg" alt="Image15" class="works"/>
                 <div class="overlay">
                     <div class="text small">PERSEPHONE</div>
                 </div>
             </div>
-            <div class="gallerycont sixteen">
+            <div class="gallerycont sixteen hover thumbnail" onclick="openPopup(16)">
                 <img src="16.jpg" alt="Image16" class="works"/>
                 <div class="overlay">
                     <div class="text">RUMINA</div>
@@ -116,19 +126,19 @@
             </div>
         </div>
         <div class="fourthrow">
-            <div class="gallerycont eleven">
+            <div class="gallerycont eleven hover thumbnail" onclick="openPopup(11)">
                 <img src="11.jpg" alt="Image11" class="works"/>
                 <div class="overlay">
                     <div class="text">ARTEMIS</div>
                 </div>
             </div>
-            <div class="gallerycont seventeen">
+            <div class="gallerycont seventeen hover thumbnail" onclick="openPopup(17)">
                 <img src="17.jpg" alt="Image17" class="works"/>
                 <div class="overlay">
                     <div class="text">VENUS</div>
                 </div>
             </div>
-            <div class="gallerycont eighteen">
+            <div class="gallerycont eighteen hover thumbnail" onclick="openPopup(18)">
                 <img src="18.jpg" alt="Image18" class="works"/>
                 <div class="overlay">
                     <div class="text">HERA</div>
@@ -136,31 +146,31 @@
             </div>
         </div>
         <div class="fifthrow">
-            <div class="gallerycont nineteen">
+            <div class="gallerycont nineteen hover thumbnail" onclick="openPopup(19)">
                 <img src="19.jpg" alt="Image19" class="works"/>
                 <div class="overlay">
                     <div class="text">CARYA<br> OF<br> LACONIA</div>
                 </div>
             </div>
-            <div class="gallerycont twenty">
+            <div class="gallerycont twenty hover thumbnail" onclick="openPopup(20)">
                 <img src="20.jpg" alt="Image20" class="works"/>
                 <div class="overlay">
                     <div class="text">MELLONA</div>
                 </div>
             </div>
-            <div class="gallerycont twentyone">
+            <div class="gallerycont twentyone hover thumbnail" onclick="openPopup(21)">
                 <img src="21.jpg" alt="Image21" class="works"/>
                 <div class="overlay">
                     <div class="text">GODDESS<br> POMONA</div>
                 </div>
             </div>
-            <div class="gallerycont twentytwo">
+            <div class="gallerycont twentytwo hover thumbnail" onclick="openPopup(22)">
                 <img src="22.jpg" alt="Image22" class="works"/>
                 <div class="overlay">
                     <div class="text small">SUNNY SIDE UP</div>
                 </div>
             </div>
-            <div class="gallerycont twentythree">
+            <div class="gallerycont twentythree hover thumbnail" onclick="openPopup(23)">
                 <img src="23.jpg" alt="Image23" class="works"/>
                 <div class="overlay">
                     <div class="text">PARADISE</div>
@@ -168,13 +178,13 @@
             </div>
         </div>
         <div class="sixthrow">
-            <div class="gallerycont twentyfour">
+            <div class="gallerycont twentyfour hover thumbnail" onclick="openPopup(24)">
                 <img src="24.jpg" alt="Image24" class="works"/>
                 <div class="overlay">
                     <div class="text">ISIS</div>
                 </div>
             </div>
-            <div class="gallerycont twentyfive">
+            <div class="gallerycont twentyfive hover thumbnail" onclick="openPopup(25)">
                 <img src="25.jpg" alt="Image25" class="works"/>
                 <div class="overlay">
                     <div class="text">HATHOR</div>
@@ -182,31 +192,31 @@
             </div>
         </div>
         <div class="seventhrow">
-            <div class="gallerycont twentysix">
+            <div class="gallerycont twentysix hover thumbnail" onclick="openPopup(26)">
                 <img src="26.jpg" alt="Image26" class="works"/>
                 <div class="overlay">
                     <div class="text">POPPY<br> GODDESS</div>
                 </div>
             </div>
-            <div class="gallerycont twentyseven">
+            <div class="gallerycont twentyseven hover thumbnail" onclick="openPopup(27)">
                 <img src="27.jpg" alt="Image27" class="works"/>
                 <div class="overlay">
                     <div class="text">MAMA<br> COCA</div>
                 </div>
             </div>
-            <div class="gallerycont twentyeight">
+            <div class="gallerycont twentyeight hover thumbnail" onclick="openPopup(28)">
                 <img src="28.jpg" alt="Image28" class="works"/>
                 <div class="overlay">
                     <div class="text">AXOMAMA</div>
                 </div>
             </div>
-            <div class="gallerycont twentynine">
+            <div class="gallerycont twentynine hover thumbnail" onclick="openPopup(29)">
                 <img src="29.jpg" alt="Image29" class="works"/>
                 <div class="overlay">
                     <div class="text">MAMA<br> ZARA</div>
                 </div>
             </div>        
-            <div class="gallerycont thirtyone">
+            <div class="gallerycont thirtyone hover thumbnail" onclick="openPopup(31)">
                 <img src="31.jpg" alt="Image31" class="works"/>
                 <div class="overlay">
                     <div class="text">IXCACAO</div>
@@ -214,13 +224,13 @@
             </div>
         </div>
         <div class="eighthrow">
-            <div class="gallerycont thirty">
+            <div class="gallerycont thirty hover thumbnail" onclick="openPopup(30)">
                 <img src="30.jpg" alt="Image30" class="works"/>
                 <div class="overlay">
                     <div class="text">DURGA</div>
                 </div>
             </div>
-            <div class="gallerycont thirtytwo">
+            <div class="gallerycont thirtytwo hover thumbnail" onclick="openPopup(32)">
                 <img src="32.jpg" alt="Image32" class="works"/>
                 <div class="overlay">
                     <div class="text">KALI</div>
@@ -238,5 +248,67 @@
           <a href="https://www.instagram.com/leilaboveiri" target="_blank" class="fa fa-instagram"></a>
         </div>
       </div>
+
+
+    <script>
+        var descriptionDict = {
+            1: "Chloris, 2025, oil on canvas, 50 x 40 cm",
+            2: "The Birth of Venus, 2025, oil on canvas" + "\n50 x 40 cm",
+            3: "Chantico, 2024, oil on canvas, 50 x 40 cm",
+            4: "Hecate, 2024, oil on canvas, 50 x 40 cm",
+            5: "Alakshmi, 2024, oil on canvas, 50 x 40 cm",
+            8: "The Dance of the Muses, 2023, oil on canvas" + "\n60 x 70 cm",
+            6: "Titanomachy, 2024, oil on canvas, 230 x 430 cm",
+            7: "Leda, 2023, oil on canvas, 90 x 130 cm",
+            9: "Moirai, 2023, oil on canvas, 50 x 40 cm",
+            10: "Freyja, 2023, oil on canvas, 50 x 40 cm",
+            12: "Panacea, 2023, oil on canvas, 50 x 40 cm",
+            13: "Ambika, 2023, oil on canvas, 50 x 40 cm",
+            14: "Xiwangmu, 2023, oil on canvas, 50 x 40 cm",
+            15: "Persephone, 2023, oil on canvas, 50 x 40 cm",
+            16: "Rumina, 2023, oil on canvas, 50 x 40 cm",
+            11: "Artemis, 2023, oil on canvas, 200 x 150 cm",
+            17: "Venus, 2022, oil on canvas, 200 x 150 cm",
+            18: "Hera, 2022, oil on canvas, 200 x 150 cm",
+            19: "Carya of Laconia, 2022, oil on canvas" + "\n50 x 40 cm",
+            20: "Mellona, 2022, oil on canvas, 50 x 40 cm",
+            21: "Goddess Pomona, 2022, oil on canvas" + "\n50 x 40 cm",
+            22: "Sunny side up, 2022, oil on canvas" + "\n170 x 180 cm",
+            23: "Blank",
+            24: "Isis, 2022, oil on canvas, 150 x 100 cm",
+            25: "Hathor, 2022, oil on canvas, 150 x 100 cm",
+            26: "Poppy goddess, 2022, oil on canvas" + "\n50 x 40 cm",
+            27: "Mama Coca, 2021, oil on canvas, 50 x 40 cm",
+            28: "Axomama, 2020, oil on canvas, 50 x 40 cm",
+            29: "Mama Zara, 2020, oil on canvas, 50 x 40 cm",
+            31: "IxCacao, 2019, oil on canvas, 50 x 40 cm",
+            30: "Durga, 2020, oil on canvas, 100 x 70 cm",
+            32: "Kali, 2019, oil on canvas, 90 x 70 cm",
+        };
+        function openPopup(num) {
+            let imgNum = parseInt(num, 10);
+            let imgUrl = `https://leilaboveiri.vercel.app/${imgNum}.jpg`;
+            const fullImage = document.getElementById('fullImage');
+            const description = document.getElementById('description');
+
+            description.innerText = descriptionDict[String(imgNum)];
+            fullImage.onload = function () {
+                document.getElementById('imagePopup').style.display = 'flex';
+            };
+
+            imagePopup.addEventListener('click', function (e) {
+                if (e.target === imagePopup) {
+                    closePopup();
+                }
+            });
+
+            fullImage.src = imgUrl;
+            document.querySelectorAll('.thumbnail').forEach(el => el.classList.remove('hover'));
+        }
+        function closePopup() {
+            document.getElementById('imagePopup').style.display = 'none';
+            document.querySelectorAll('.thumbnail').forEach(el => el.classList.add('hover'));
+        }
+    </script>
 </body>
 </html>
