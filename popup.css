@@ -26,6 +26,7 @@
   color: #313131;
   margin: 0.5em;
   text-align: center;
+  font-size: 1.25em;
 }
 
 .popup img {
@@ -49,5 +50,6 @@
 @media screen and (max-width: 500px) {
   .popup p {
     margin: 0.5em;
+    font-size: 1em;
   }
 }
