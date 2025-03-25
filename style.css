@@ -169,6 +169,12 @@ body {
   /*color: #D4D0CD;*/
   color: #F6F5F0;
   text-align: center;
+  pointer-events: none;
+}
+
+.hover:hover {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1200px) and (min-height: 500px){
@@ -336,12 +342,12 @@ body {
 
 @media screen and (min-width: 850px) {
 
-  .gallerycont:hover .text {
+  .hover:hover .text {
     transition: .2s ease-in;
     opacity: 1;
   }
   
-  .gallerycont:hover .works {
+  .hover:hover .works {
     filter: brightness(40%);
     transition: .2s ease-in;
   }
