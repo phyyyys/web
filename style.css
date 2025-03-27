@@ -177,6 +177,12 @@ body {
   cursor: pointer;
 }
 
+.aboutText {
+  text-align: justify;
+  margin: 2.5em;
+  font-size: 1.2em;
+}
+
 @media screen and (min-width: 1200px) and (min-height: 500px){
   .nav {
     flex-direction: row;
@@ -350,6 +356,15 @@ body {
   .hover:hover .works {
     filter: brightness(40%);
     transition: .2s ease-in;
+  }
+
+  .aboutText {
+    border-top: 0.1em solid #c2bb97;
+    border-bottom: 0.1em solid #c2bb97;
+    margin: 2em 5em;
+    margin-bottom: 0;
+    padding: 2em 0;
+    font-size: 2em;
   }
 
 }
