@@ -18,9 +18,15 @@
           <a href="about.html">About</a>
         </div>
     </div>
+
+    <div class="languageSelect">
+      <a class="enLang" href="about.html" onclick="changeLanguage('en')">en</a>
+      <div class="seperator">|</div>
+      <a class="huLang" href="about.html" onclick="changeLanguage('hu')">hu</a>  
+    </div>
       
-    <div class="aboutText">
-      Mythology is the central theme of my art. The emotional and dramatic nature of
+    <div class="aboutText mainText" data-i18n="aboutPage">
+    <!--  Mythology is the central theme of my art. The emotional and dramatic nature of
       myths sparked my interest in this subject. Although magical and mysterious, myths
       are rooted in the real world and human nature and, therefore, easy to identify with.
       Central to my work is the female body, or the goddess, which is found in all
@@ -41,12 +47,12 @@
       The goddess paintings can be divided into two groups: The first group consists of
       goddesses in human form and, the second group of goddesses depicted as
       anthropomorphized fruits and plants. In the latter group, the connection between
-      the female body, life, and nature is even more visible.
+      the female body, life, and nature is even more visible.-->
     </div>
 
 
-    <div class="aboutText cv">
-      Leila Boveiri<br>
+    <div class="aboutText cv" data-i18n="aboutCv">
+      <!--Leila Boveiri<br>
       Born in 1997, Miskolc, Hungary<br>
       Lives and works in Budapest<br>
       <br>
@@ -59,7 +65,35 @@
       2022 &emsp; &emsp; We're All Strangers in Someone Else's Paradise, Profil Galéria, Budapest<br>
       2022 &emsp; &emsp; MKE@Art Market Budapest, Bálna, Budapest<br>
       2023 &emsp; &emsp; Jótékonysági aukció, MKE, Aula<br>
-      2023 &emsp; &emsp; Barcsay, MKE, Aula
+      2023 &emsp; &emsp; Barcsay, MKE, Aula-->
+    </div>
+    <!--<table class="aboutText">
+      <tr>
+        <td class="firstCol">2022</td>
+        <td>We’re All Strangers in Someone Else’s Paradise, Profil galéria, Budapest</td>
+      </tr>
+      <tr>
+        <td>2022</td>
+        <td>MKE@Art Market Budapest, Bálna, Budapest</td>
+      </tr>
+      <tr>
+        <td>2023</td>
+        <td>Jótékonysági aukció, MKE, Aula</td>
+      </tr>
+      <tr>
+        <td>2023</td>
+        <td>Barcsay, MKE, Aula</td>
+      </tr>
+    </table>-->
+    <div class="exhibitions aboutText">
+      <div>2022</div>
+      <div>We're All Strangers in Someone Else's Paradise, Profil Galéria, Budapest</div>
+      <div>2022</div>
+      <div>MKE@Art Market Budapest, Bálna, Budapest</div>
+      <div>2023</div>
+      <div>Jótékonysági aukció, MKE, Aula</div>
+      <div>2023</div>
+      <div>Barcsay, MKE, Aula</div>
     </div>
     <div class="foot">
         <div class="footleft">
@@ -70,5 +104,7 @@
           <a href="https://www.instagram.com/leilaboveiri" target="_blank" class="fa fa-instagram"></a>
         </div>
     </div>
+
+    <script src="language.js"></script>
 </body>
 </html>
