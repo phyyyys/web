@@ -357,6 +357,10 @@ body {
     justify-content: center;
   }
 
+  .cv {
+    width: 100vw;
+  }
+
   .nav {
     flex-direction: row;
     margin-top: 1em;
