@@ -29,7 +29,7 @@ body {
 
 .navleft > div > a {
   text-decoration: none;
-  color: black;
+  color: #212A37;
 }
 
 .navright {
@@ -66,17 +66,17 @@ body {
 
 .fa-facebook {
   width: 1.5em;
-  color: black;
+  color: #212A37;
 }
 
 .fa-instagram {
   width: 1.5em;
-  color: black;
+  color: #212A37;
 }
 
 .navright > a {
   text-decoration: none;
-  color: black;
+  color: #212A37;
 }
 
 .imagecont {
@@ -112,7 +112,7 @@ body {
 
 .footleft > div > a {
   text-decoration: none;
-  color: black;
+  color: #212A37;
 }
 
 .footleft > div > a:hover {
@@ -181,6 +181,55 @@ body {
   text-align: justify;
   margin: 2.5em;
   font-size: 1.2em;
+  color: #212A37;
+}
+
+.cv {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.mainText {
+  margin-top: 0;
+}
+
+.languageSelect > a {
+  text-decoration: none;
+  color: #485464;
+  font-size: 1.1em;
+}
+
+.seperator {
+  font-size: 1em;
+  color: #485464;
+}
+
+.languageSelect {
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2.5em 3em 1em 3em;
+  gap: 4px;
+  /*position: absolute;
+  top: 4vw;
+  right: 2.5vw;*/
+}
+
+/*table {
+  width: 100vw;
+}
+
+.firstCol {
+  width: 10%;
+}*/
+
+.exhibitions {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  row-gap: 1em;
+  border-top: none;
+  margin-top: 1em;
 }
 
 @media screen and (min-width: 1200px) and (min-height: 500px){
@@ -215,12 +264,25 @@ body {
     justify-content: center;
   }
 
+  .nav {
+    padding-top: 1em;
+  }
+
   .navleft {
     font-size: 10vw;
   }
 
   .navright {
     font-size: 5.5vw;
+  }
+
+  .languageSelect {
+    top: 0.3em;
+    right: 0.75em;
+  }
+
+  .languageSelect > a {
+    font-size: 1em;
   }
 }
 
@@ -310,6 +372,11 @@ body {
     width: 50vw;
   }
 
+  .languageSelect {
+    justify-content: flex-start;
+    width: 100vw;
+  }
+
   .gallery {
     margin: 2em;
     gap: 2em;
@@ -358,13 +425,40 @@ body {
     transition: .2s ease-in;
   }
 
+}
+
+@media screen and (min-width: 1100px) {
   .aboutText {
-    border-top: 0.1em solid #c2bb97;
-    border-bottom: 0.1em solid #c2bb97;
-    margin: 2em 8em;
-    margin-bottom: 0;
-    padding: 2em 0;
+    /*border-top: 0.1em solid #c2bb97;*/
+    /*border-bottom: 0.1em solid #c2bb97;*/
+    margin: 2em 8em 0 8em;
+    margin-top: 0;
     font-size: 1.8em;
   }
 
+  .languageSelect {
+    margin: 4em 14.5em 2em 14.5em;
+    padding-top: 2em;
+    border-top: 0.15em solid #c2bb97;
+  }
+
+  .languageSelect > a {
+    font-size: 1.2em;
+  }
+
+  .exhibitions {
+    grid-template-columns: 1fr 7fr;
+    border-bottom: 0.1em solid #c2bb97;
+    padding-bottom: 2em;
+    padding-top: 1em;
+  }
+
+  .cv {
+    border-top: 0.1em solid #c2bb97;
+    padding-top: 2em;
+  }
+
+  .mainText {
+    padding-bottom: 2em;
+  }
 }
