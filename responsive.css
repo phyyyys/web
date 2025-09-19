@@ -134,6 +134,10 @@
     width: auto;
   }
 
+  .newrow {
+    height: 18vw;
+  }
+
   .firstrow {
     /*height: 32vh;*/
     height: 18vw;
