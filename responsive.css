@@ -1,0 +1,310 @@
+@media screen and ((min-width: 700px) or (max-height: 600)){
+  .exhib-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    /*height: 70vh;*/
+  }
+
+  .exhib-photo {
+    width: 50vw;
+    padding-left: 10vw;
+  }
+
+  .exhib-title {
+    font-size: 5vw;
+    font-weight: bold;
+    width: 50vw;
+    height: 100%;
+    margin-bottom: 10vh;
+  }
+
+  .exhib-body {
+    /*margin: 0 3vw;*/
+    width: 100vw;
+  }
+
+  html {
+    width: 100vw;
+  }
+
+  .exhibitText {
+    font-size: 1.6em;
+  }
+
+  .exhib-main-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and ((min-width: 1500px) and (min-height: 700px)){
+  .exhib-main {
+    height: 70vh;
+  }
+}
+
+@media screen and (max-height: 500px){
+  .exhibit-header {
+    font-size: 2vw;
+  }
+
+  .mainExhibitText {
+    font-size: 1.5em;
+  }
+}
+
+/*EXHIBITION SECTION END*/
+
+@media screen and (min-width: 1200px) and (min-height: 500px){
+  .nav {
+    flex-direction: row;
+    margin-top: 2em;
+  }
+
+  .navleft {
+    font-size: 4.5vw;
+    width: 55vw;
+    margin-left: 10vw;
+    justify-content: left;
+    margin-top: 0;
+  }
+
+  .navright {
+    font-size: 2vw;
+    width: 45vw;
+    margin-right: 10vw;
+    justify-content: right;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .foot {
+    flex-direction: column-reverse;
+    font-size: 4vw;
+  }
+
+  .footright {
+    justify-content: center;
+  }
+
+  .nav {
+    padding-top: 1em;
+  }
+
+  .navleft {
+    font-size: 10vw;
+  }
+
+  .navright {
+    font-size: 5.5vw;
+  }
+
+  .languageSelect {
+    top: 0.3em;
+    right: 0.75em;
+  }
+
+  .languageSelect > a {
+    font-size: 1em;
+  }
+
+}
+
+@media screen and (min-width: 850px) {
+
+  .text {
+    font-size: 1.8vw;
+  }
+
+  .small {
+    font-size: 1.25vw;
+  }
+
+  .gallery > div {
+    gap: 1vw;
+  }
+
+  .works {
+    height: 100%;
+    width: auto;
+  }
+
+  .firstrow {
+    /*height: 32vh;*/
+    height: 18vw;
+  }
+
+  .secondrow {
+    /* height: 32vh; */
+    height: 18vw;
+  }
+
+  .thirdrow {
+    /* height: 26vh; */
+    height: 12vw;
+  }
+
+  .fourthrow {
+    /* height: 38vh; */
+    height: 22vw;
+  }
+
+  .fifthrow {
+    /* height: 32vh; */
+    height: 16vw;
+  }
+
+  .sixthrow {
+    /* height: 40vh; */
+    height: 26vw;
+  }
+
+  .seventhrow {
+    /* height: 36vh; */
+    height: 18vw;
+  }
+
+  .eighthrow {
+    /* height: 40vh; */
+    height: 26vw;
+  }
+
+  .gallerycont {
+    height: 100%;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  body {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cv {
+    width: 100vw;
+  }
+
+  .nav {
+    flex-direction: row;
+    margin-top: 1em;
+    width: 100vw;
+    font-size: 0.75em;
+  }
+
+  .foot {
+    font-size: 1em;
+    margin-top: 50vh;
+  }
+
+  .imagecont {
+    width: 50vw;
+  }
+
+  .languageSelect {
+    justify-content: flex-start;
+    width: 100vw;
+  }
+
+  .gallery {
+    margin: 2em;
+    gap: 2em;
+  }
+
+  .gallery > div {
+    gap: 2em;
+  }
+}
+
+@media screen and (max-height: 350px) and (max-width: 650px) {
+  .foot {
+    font-size: 1em;
+  }
+
+  .navleft {
+    font-size: 2em;
+  }
+
+  .navright {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 850px) {
+  .gallery {
+    margin: 34vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+
+  .gallerycont > div {
+    gap: 2em;
+  }
+}
+
+@media screen and (min-width: 850px) {
+
+  .hover:hover .text {
+    transition: .2s ease-in;
+    opacity: 1;
+  }
+  
+  .hover:hover .works {
+    filter: brightness(40%);
+    transition: .2s ease-in;
+  }
+
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutText {
+    /*border-top: 0.1em solid #c2bb97;*/
+    /*border-bottom: 0.1em solid #c2bb97;*/
+    margin: 2em 8em 0 8em;
+    margin-top: 0;
+    font-size: 1.8em;
+  }
+
+  .languageSelect {
+    margin: 4em 14.5em 2em 14.5em;
+    padding-top: 2em;
+    border-top: 0.15em solid #c2bb97;
+  }
+
+  .languageSelect > a {
+    font-size: 1.2em;
+  }
+
+  .exhibitions {
+    grid-template-columns: 1fr 7fr;
+    border-bottom: 0.1em solid #c2bb97;
+    padding-bottom: 2em;
+    padding-top: 1em;
+  }
+
+  .cv {
+    border-top: 0.1em solid #c2bb97;
+    padding-top: 2em;
+  }
+
+  .mainText {
+    padding-bottom: 2em;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+    .serendipity-exhib-title {
+        font-size: 6vw;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .serendipity-exhib-title {
+        font-size: 2.5vw;
+    }
+}
